@@ -34,7 +34,7 @@ SECRET_KEY=secret_key_example
 ```bash
 python app.py
 ```
-
+- upload the `system_logs.txt` into the parsing form to parse logs
 
 ### 5. Assumptions & Limitations
 - The parser only supports .txt files encoded in UTF-8.
