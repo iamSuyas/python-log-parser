@@ -24,8 +24,13 @@ venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+### 4. Setup Secret key for CSRF token
+- Add a variable `SECRET_KEY` in a `.env` file like:
+```bash
+SECRET_KEY=secret_key_example
+```
 
-### 4. Run the Flask application:
+### 5. Run the Flask application:
 ```bash
 python app.py
 ```
