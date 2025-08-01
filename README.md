@@ -14,10 +14,10 @@ git clone https://github.com/iamSuyas/python-log-parser
 cd python-log-parser
 ```
 
-### 2. Create and activate a virtual environment (optional but recommended):
+### 2. Create and activate a virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
+venv/bin/activate
 ```
 
 ### 3. Install required dependencies:
