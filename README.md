@@ -22,7 +22,7 @@ venv/bin/activate
 
 ### 3. Install required dependencies:
 ```bash
-pip install -r requirements.txt
+pip install flask flask-sqlalchemy Flask-WTF dotenv
 ```
 ### 4. Setup Secret key for CSRF token
 - Add a variable `SECRET_KEY` in a `.env` file like:
