@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log File Analyzer</title>
+</head>
+<body>
+    
+
+    {% if alerts %}
+        <h2>Alerts Found:</h2>
+        <ul>
+            {% for alert in alerts %}
+                <li>{{ alert }}</li>
+            {% endfor %}
+        </ul>
+    {%else%}
+    <a href="parseLog">Go Back</a>
+    <h2>No Alerts Found</h2>
+    {% endif %}
+</body>
+</html>
