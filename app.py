@@ -1,6 +1,13 @@
+import os
 from flask import Flask, render_template, request
 from parser import log_parser
+from flask_wtf.csrf import CSRFProtect
+from dotenv import load_dotenv
+
+load_dotenv()
 app=Flask(__name__)
+app.secret_key = os.getenv("SECRET_KEY")
+csrf = CSRFProtect(app)
 
 @app.route('/')
 def index():
